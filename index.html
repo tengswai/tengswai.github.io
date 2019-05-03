@@ -43,12 +43,14 @@
     }
 
     #page2{
-        background-image: linear-gradient(red, yellow);
+        background-image: linear-gradient(to bottom,white, var(--blue));
     }
 
-    #p{
+    p{
         color:black;
         text-align:center;
+        font-family: 'DFKai-sb';
+        font-size:5vw;
     }
   </style>
 </head>
@@ -82,5 +84,21 @@
                 animate-in-duration="0.5s">我是小狐狸</p>
             </amp-story-grid-layer>
         </amp-story-page>
+        <amp-story-page id="page2">
+                <amp-story-grid-layer template="vertical">
+                    <h1>PIXNET</h1>
+                    <amp-img src="https://www.pixfs.net/desktop/static/media/desktop_interest_banner@2x.22e31650.png" 
+                    width="226" height="200" layout="responsive"
+                    animate-in="fly-in-top"
+                    animate-in-delay="0.3s"
+                    animate-in-duration="0.5s">
+                    </amp-img>
+                    <p 
+                    class="my-element"
+                    animate-in="fly-in-right"
+                    animate-in-delay="0.3s"
+                    animate-in-duration="0.5s">前往美食星球！</p>
+                </amp-story-grid-layer>
+            </amp-story-page>
     </amp-story>
 </body>
